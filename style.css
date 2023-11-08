@@ -43,11 +43,11 @@ body {
   justify-content: space-between;
 }
 
-.block {
+/* .block {
   background-color: blueviolet;
   border-radius: 100% 0% 100% 0% / 100% 100% 0% 0%;
   padding: 60px 40px 40px 40px;
-}
+} */
 .red {
   background-color: red;
 }
