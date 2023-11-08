@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(images/pexels-egor-kamelev-813872.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  position: relative;
+  max-width: 400px;
+  margin-top: 150px;
+  background-color: aqua;
+  overflow: hidden;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  border-radius: 20px;
+  box-shadow: 6px 10px 5px 3px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 6px 10px 5px 3px rgba(0, 0, 0, 0.65);
+  box-shadow: 6px 10px 5px 3px rgba(0, 0, 0, 0.65);
+}
+.weathers {
+  padding: 20px 40px 0px 40px;
+}
+.pogoda {
+  width: 100px;
+  height: 100px;
+}
+.weathers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.block {
+  background-color: blueviolet;
+  border-radius: 100% 0% 100% 0% / 100% 100% 0% 0%;
+  padding: 0px 40px 40px 40px;
+}
+.red {
+  background-color: red;
+}
+.properties {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 20px;
+  background-image: url(images/pexels-johannes-plenio-1118873.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: all 0.5s ease;
+}
+.sityname {
+  display: inline-block;
+  padding-bottom: 40px;
+}
+.date {
+  font-size: 16px;
+}
+.input {
+  height: 20px;
+  width: 100%;
+  background-color: transparent;
+  outline: 0;
+  padding: 15px 10px;
+  border: 3px solid black;
+  border-radius: 15px;
+  font-weight: bold;
+}
+.input::placeholder {
+  color: black;
+}
+.z-index {
+  width: 0%;
+  padding: 0;
+}
+.name-and-foto {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.foto4ka {
+  padding-bottom: 10px;
+  position: absolute;
+  right: 10px;
+  bottom: 83px;
+}
+.none {
+  display: none;
+}
+.button {
+  padding: 10px 25px;
+  font-weight: bold;
+  background-color: transparent;
+}
