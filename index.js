@@ -62,8 +62,10 @@ button.addEventListener("click", () => {
   input.value = "";
 });
 function showWaether(value) {
-  let link = `http://api.openweathermap.org/data/2.5/weather?q=${value}&units=metric&APPID=5d066958a60d315387d9492393935c19`;
-  fetch(link)
+  // let link = `http://api.openweathermap.org/data/2.5/weather?q=${value}&units=metric&APPID=5d066958a60d315387d9492393935c19`;
+  fetch(
+    `http://api.openweathermap.org/data/2.5/weather?q=${value}&units=metric&APPID=5d066958a60d315387d9492393935c19`
+  )
     .then((response) => response.json())
     .then((weathers) => {
       boxWeather.innerHTML = `<img  class="pogoda" src="http://openweathermap.org/img/w/${weathers.weather[0].icon}.png"/><span>${weathers.main.temp}  &#176 С</span>`;
